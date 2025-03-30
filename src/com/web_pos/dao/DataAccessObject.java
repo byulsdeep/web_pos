@@ -24,9 +24,12 @@ public class DataAccessObject {
 		Connection connection = null;
 
 		/* ip, port, sid 정보 저장 */
-		String url = "jdbc:oracle:thin:@localhost:1521:xe"; //41 
-		String user = "BYUL"; //hoon
-		String password = "BYUL"; //4321
+		// String url = "jdbc:oracle:thin:@localhost:1521:xe"; //41
+		// String user = "BYUL"; //hoon
+		// String password = "BYUL"; //4321
+		String url = "jdbc:oracle:thin:@localhost:1521/xe"; // docker
+		String user = "WEB_POS";
+		String password = "WEB_POS";
 
 		/* Driver의 유무 파악 */
 		try {
